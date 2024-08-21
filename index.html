@@ -45,7 +45,7 @@
     
 </head>
 <body class="">
-    <header class="w-10/12 mx-auto bg-gradient-to-r from-[rgb(255,255,255)] to-[rgb(255,255,255)] ">
+    <header class="w-11/12 lg:w-10/12 mx-auto bg-gradient-to-r from-white via-transparent to-white overflow-hidden">
         <!-- nav Section -->
         <nav class="mt-7">
             <div class="navbar bg-base-100">
@@ -55,65 +55,67 @@
                     </span>
                     
                     <a class="text-xl font-bold ml-2 rounded-lg">Rinterio</a>
-                    
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 font-medium ">
-                    <li class="text-black hover:text-primary"><a>Home</a></li>
-                    <li class="text-text_col2 hover:text-primary"><a href="">Services</a></li>
-                    <li class="text-text_col2 hover:text-primary"><a href="">Portfolio</a></li>
-                    <li class="text-text_col2 hover:text-primary"><a href="">Blogs</a></li>
-                    <li class="text-text_col2 hover:text-primary"><a href="">Contact Us</a></li>
-                  </ul>
+                    <ul class="menu menu-horizontal px-1 font-medium">
+                        <li class="text-black hover:text-primary"><a>Home</a></li>
+                        <li class="text-text_col2 hover:text-primary"><a href="">Services</a></li>
+                        <li class="text-text_col2 hover:text-primary"><a href="">Portfolio</a></li>
+                        <li class="text-text_col2 hover:text-primary"><a href="">Blogs</a></li>
+                        <li class="text-text_col2 hover:text-primary"><a href="">Contact Us</a></li>
+                    </ul>
                 </div>
                 <div class="navbar-end space-x-3">
-                <div class="hidden lg:block">
-                    <span class="w-7 h-7 rounded-full bg-white flex justify-center items-center"><i class="fa-solid fa-magnifying-glass "></i></span>
+                    <div class="hidden lg:block">
+                        <span class="w-7 h-7 rounded-full bg-white flex justify-center items-center"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                    <div class="hidden lg:block">
+                        <span class="w-7 h-7 rounded-full bg-white flex justify-center items-center"><i class="fa-solid fa-cart-shopping"></i></span>
+                    </div>
+                    <div class="hidden lg:block">
+                        <a class="btn bg-primary font-bold flex items-center space-x-2">
+                            <span>Book Consult</span> 
+                            <span class="h-7 w-7 bg-black rounded-full flex justify-center items-center text-white">
+                                <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li class="text-black"><a>Home</a></li>
+                            <li class="text-text_col2"><a href="">Services</a></li>
+                            <li class="text-text_col2"><a href="">Portfolio</a></li>
+                            <li class="text-text_col2"><a href="">Blogs</a></li>
+                            <li class="text-text_col2"><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="hidden lg:block">
-                    <span class="w-7 h-7 rounded-full bg-white flex justify-center items-center"><i class="fa-solid fa-cart-shopping"></i></span>
-                </div>
-                <div class="hidden lg:block">
-                    <a class=" btn bg-primary font-bold"><span>Book Consult</span> <span class="h-7 w-7 bg-black rounded-full flex justify-center items-center text-white"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </a>
-                </div>
-                <div class="dropdown">
-                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <i class="fa-solid fa-bars"></i>
-                 </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li class="text-black"><a>Home</a></li>
-                        <li class="text-text_col2"><a href="">Services</a></li>
-                        <li class="text-text_col2"><a href="">Portfolio</a></li>
-                        <li class="text-text_col2"><a href="">Blogs</a></li>
-                        <li class="text-text_col2"><a href="">Contact Us</a></li>
-                  </div>
-                </div>
-              </div>
+            </div>
         </nav>
-
+    
         <!-- banner section -->
-
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center text-center">
             <div class="items-center">
                 <img src="./B10-Assignment-03/assets/banner.png" alt="">
             </div>
-
-            <div class=" text-center flex flex-col items-center ">
-                <h1 class="max-w-5xl text-xl lg:text-6xl font-bold my-7 text-text_col ">A barn house of this design has a striking appearance</h1>
-                <p class="max-w-4xl text-base font-medium text-text_col2 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-                <div class=" flex items-center my-7">
-                    <button class="flex  rounded-3xl font-bold bg-opacity-50 btn bg-primary "><span class="">View Details</span> <span class="bg-primary rounded-full w-7 h-7 flex items-center justify-center">
+            <div class="text-center flex flex-col items-center">
+                <h1 class="text-xl lg:text-6xl font-bold my-3 lg:my-7 text-text_col">A barn house of this design has a striking appearance</h1>
+                <p class="text-base font-medium text-text_col2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <div class="flex items-center my-4 lg:my-7">
+                    <button class="flex items-center rounded-3xl font-bold bg-opacity-50 btn bg-primary space-x-2">
+                        <span>View Details</span>
+                        <span class="bg-primary rounded-full w-7 h-7 flex items-center justify-center">
                             <i class="fa-solid fa-arrow-right -rotate-45"></i>
-                        </span> 
-                   </button>
+                        </span>
+                    </button>
                 </div>
             </div>
-
         </div>
-       
     </header>
+    
     
     <main>
 
