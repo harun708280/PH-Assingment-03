@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,39 +20,106 @@
 
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                primary:rgb(171, 239, 95),
-                text_col:rgb(33, 33, 33),
-                text_col2:rgb(115, 115, 115),
-                work1: rgb(231, 193, 211),
-                work2:rgb(239, 218, 110),
-                work3:rgb(164, 218, 195),
-                work4:rgb(119, 170, 234),
-              },
-              backgroundImage:{
-                form_img:"url('./assets/bg.jpg')"
-              },
-
-              fontFamily: {
-                font: "Manrope",
-              },
-
-            }
-          }
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(171, 239, 95)',
+                        text_col: 'rgb(33, 33, 33)',
+                        text_col2: 'rgb(115, 115, 115)',
+                        work1: 'rgb(231, 193, 211)',
+                        work2: 'rgb(239, 218, 110)',
+                        work3: 'rgb(164, 218, 195)',
+                        work4: 'rgb(119, 170, 234)',
+                    },
+                    backgroundImage: {
+                        form_img: "url('./B10-Assignment-03/assets/bg.jpg')",
+                        
+                    },
+                    fontFamily: {
+                        font: ['Manrope', 'sans-serif'],
+                    },
+                },
+            },
         }
-      </script>
+    </script>
+    
 </head>
-<body>
-    <header>
+<body class="">
+    <header class="w-10/12 mx-auto bg-gradient-to-r from-[rgb(255,255,255)] to-[rgb(255,255,255)] ">
+        <!-- nav Section -->
+        <nav class="mt-7">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <span class="bg-primary rounded-full w-7 h-7 flex items-center justify-center">
+                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </span>
+                    
+                    <a class="text-xl font-bold ml-2 rounded-lg">Rinterio</a>
+                    
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 font-medium ">
+                    <li class="text-black hover:text-primary"><a>Home</a></li>
+                    <li class="text-text_col2 hover:text-primary"><a href="">Services</a></li>
+                    <li class="text-text_col2 hover:text-primary"><a href="">Portfolio</a></li>
+                    <li class="text-text_col2 hover:text-primary"><a href="">Blogs</a></li>
+                    <li class="text-text_col2 hover:text-primary"><a href="">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-3">
+                <div class="hidden lg:block">
+                    <span class="w-7 h-7 rounded-full bg-white flex justify-center items-center"><i class="fa-solid fa-magnifying-glass "></i></span>
+                </div>
+                <div class="hidden lg:block">
+                    <span class="w-7 h-7 rounded-full bg-white flex justify-center items-center"><i class="fa-solid fa-cart-shopping"></i></span>
+                </div>
+                <div class="hidden lg:block">
+                    <a class=" btn bg-primary font-bold"><span>Book Consult</span> <span class="h-7 w-7 bg-black rounded-full flex justify-center items-center text-white"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </a>
+                </div>
+                <div class="dropdown">
+                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                 </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li class="text-black"><a>Home</a></li>
+                        <li class="text-text_col2"><a href="">Services</a></li>
+                        <li class="text-text_col2"><a href="">Portfolio</a></li>
+                        <li class="text-text_col2"><a href="">Blogs</a></li>
+                        <li class="text-text_col2"><a href="">Contact Us</a></li>
+                  </div>
+                </div>
+              </div>
+        </nav>
 
+        <!-- banner section -->
+
+        <div class="flex flex-col items-center justify-center">
+            <div class="items-center">
+                <img src="./B10-Assignment-03/assets/banner.png" alt="">
+            </div>
+
+            <div class=" text-center flex flex-col items-center ">
+                <h1 class="max-w-5xl text-xl lg:text-6xl font-bold my-7 text-text_col ">A barn house of this design has a striking appearance</h1>
+                <p class="max-w-4xl text-base font-medium text-text_col2 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <div class=" flex items-center my-7">
+                    <button class="flex  rounded-3xl font-bold bg-opacity-50 btn bg-primary "><span class="">View Details</span> <span class="bg-primary rounded-full w-7 h-7 flex items-center justify-center">
+                            <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                        </span> 
+                   </button>
+                </div>
+            </div>
+
+        </div>
+       
     </header>
+    
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
